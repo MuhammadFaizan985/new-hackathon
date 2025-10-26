@@ -1,0 +1,16 @@
+:root{--hero-footer-grad:linear-gradient(90deg, rgba(37,99,235,0.06), rgba(99,102,241,0.03))}
+
+.hero-footer{background:var(--hero-footer-grad);padding:28px 0;border-top:1px solid rgba(10,20,40,0.03)}
+.hero-inner{display:flex;gap:20px;align-items:center;justify-content:space-between}
+.hero-copy .hero-title{margin:0;font-size:1.25rem;font-weight:800}
+.hero-copy .hero-sub{margin:6px 0 0;color:var(--muted)}
+
+.hero-form{display:flex;gap:10px;align-items:center}
+.email-input{padding:10px 12px;border-radius:10px;border:1px solid rgba(10,20,40,0.06);min-width:220px}
+.btn.primary{background:var(--primary);color:#fff;padding:10px 14px;border-radius:10px;border:0}
+
+@media (max-width:820px){
+  .hero-inner{flex-direction:column;align-items:stretch}
+  .hero-form{width:100%;justify-content:stretch}
+  .email-input{flex:1}
+}
